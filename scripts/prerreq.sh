@@ -24,7 +24,7 @@ sudo apt install tree -y
 sudo apt-get install telnetd -y
 #httping
 sudo apt-get update -y
-sudo apt-get install -y httping
+sudo apt-get install  httping -y
 #tcpping
 sudo apt-get install tcptraceroute -y
 cd /usr/bin/
@@ -134,7 +134,7 @@ cd /tmp
 sudo curl -O https://dl.google.com/go/go1.12.linux-amd64.tar.gz
 
 sudo tar -xvf go1.12.linux-amd64.tar.gz
-sudo mv go /usr/local
+sudo cp -R go /usr/local
 echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.profile
 source ~/.profile
 echo "GOLANG version ..."
